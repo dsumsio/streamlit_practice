@@ -46,7 +46,7 @@ with st.sidebar:
     if st.button("Click me to turn yourself into a Dog"):
         st.write("Poof! You're Dawg")
     else:
-        None
+        st.write('')
 
 tab1, tab2, tab3 = st.tabs(['Names', 'Year', 'new'])
 with tab1:
