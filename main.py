@@ -65,6 +65,9 @@ with tab2:
     st.dataframe(output_table)
 
 with tab3:
+    col1, col2 = st.columns(2)
+    col1.write('Here is my additional container element that is set up as two columns. Columns can be very helpful because they can organize your data and your thoughts. They are also good for holding up buildings and other heavy objects')
+    col2.write('Here is a joke from ChatGPT: How do you organize a space party? You Planet!')
     fig3 = name_sex_balance_plot(data, name=input_name)
     st.plotly_chart(fig3)
     fig4 = name_trend_plot(data, name=input_name)
